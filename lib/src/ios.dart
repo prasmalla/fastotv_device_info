@@ -21,9 +21,13 @@ const iPhone5s = const IOSDevice(
     name: "iPhone 5s",
     type: DeviceType.phone,
     landscape: MediaQueryData(
-        padding: EdgeInsets.only(top: 20.0), size: Size(568, 320), devicePixelRatio: 2.0),
+        padding: EdgeInsets.only(top: 20.0),
+        size: Size(568, 320),
+        devicePixelRatio: 2.0),
     portrait: MediaQueryData(
-        padding: EdgeInsets.only(top: 20.0), size: Size(320, 568), devicePixelRatio: 2.0));
+        padding: EdgeInsets.only(top: 20.0),
+        size: Size(320, 568),
+        devicePixelRatio: 2.0));
 
 const iPhone8 = const IOSDevice(
     name: "iPhone 8",

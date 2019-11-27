@@ -100,6 +100,30 @@ const smallTablet = AndroidDevice(
       padding: EdgeInsets.zero, size: Size(600, 960), devicePixelRatio: 2.0),
 );
 
+const asano32LH7010T = AndroidDeviceWithTouch(
+  name: "Asano 32LH7010T",
+  type: DeviceType.tv,
+  landscape: MediaQueryData(
+    padding: EdgeInsets.zero,
+    size: Size(1280, 720),
+    devicePixelRatio: 1.5,
+  ),
+  portrait: MediaQueryData(
+      padding: EdgeInsets.zero, size: Size(720, 1280), devicePixelRatio: 1.5),
+);
+
+const m8sPlusW = AndroidDevice(
+  name: "M8S PLUS W",
+  type: DeviceType.tv,
+  landscape: MediaQueryData(
+    padding: EdgeInsets.zero,
+    size: Size(1280, 720),
+    devicePixelRatio: 1.5,
+  ),
+  portrait: MediaQueryData(
+      padding: EdgeInsets.zero, size: Size(720, 1280), devicePixelRatio: 1.5),
+);
+
 // Galaxy Tab 10
 const mediumTablet = AndroidDevice(
   name: "Medium tablet",

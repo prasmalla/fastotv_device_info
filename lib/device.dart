@@ -52,3 +52,13 @@ class AndroidDevice extends Device {
             landscape: landscape,
             portrait: portrait);
 }
+
+class AndroidDeviceWithTouch extends AndroidDevice {
+  const AndroidDeviceWithTouch(
+      {@required name, @required type, landscape, portrait})
+      : super(name: name, type: type, landscape: landscape, portrait: portrait);
+
+  Future<bool> hasTouch() async {
+    return true;
+  }
+}

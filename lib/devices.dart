@@ -23,6 +23,8 @@ abstract class Devices {
     androidDevice.mediumPhone,
     androidDevice.largePhone,
     androidDevice.smallTablet,
+    androidDevice.asano32LH7010T,
+    androidDevice.m8sPlusW,
     androidDevice.mediumTablet
   ];
 
