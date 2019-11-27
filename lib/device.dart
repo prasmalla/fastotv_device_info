@@ -1,8 +1,8 @@
 import 'package:flutter/widgets.dart';
 import 'package:flutter/services.dart';
 
-import 'package:device_info/flutter_device_info.dart';
-import 'package:device_info/device_type.dart';
+import 'package:fastotv_device_info/fastotv_device_info.dart';
+import 'package:fastotv_device_info/device_type.dart';
 
 abstract class Device {
   final String name;
@@ -17,7 +17,7 @@ abstract class Device {
     bool hasTouch;
     // Platform messages may fail, so we use a try/catch PlatformException.
     try {
-      hasTouch = await FlutterDeviceInfo.hasTouch;
+      hasTouch = await FastotvDeviceInfo.hasTouch;
     } on PlatformException {
       hasTouch = false;
     }

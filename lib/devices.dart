@@ -1,6 +1,6 @@
-import 'package:device_info/device.dart';
-import 'package:device_info/platforms/ios.dart' as iosDevice;
-import 'package:device_info/platforms/android.dart' as androidDevice;
+import 'package:fastotv_device_info/device.dart';
+import 'package:fastotv_device_info/src/ios.dart' as iosDevice;
+import 'package:fastotv_device_info/src/android.dart' as androidDevice;
 
 abstract class Devices {
   static final all = <Device>[]..addAll(ios)..addAll(android);

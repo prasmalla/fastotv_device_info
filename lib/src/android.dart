@@ -1,7 +1,7 @@
 import 'package:flutter/widgets.dart';
 
-import 'package:device_info/device.dart';
-import 'package:device_info/device_type.dart';
+import 'package:fastotv_device_info/device.dart';
+import 'package:fastotv_device_info/device_type.dart';
 
 // LG G Watch
 const watch = AndroidDevice(
