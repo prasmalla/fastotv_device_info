@@ -23,10 +23,8 @@ abstract class Devices {
     androidDevice.mediumPhone,
     androidDevice.largePhone,
     androidDevice.smallTablet,
-    androidDevice.mediumTablet,
-    androidDevice.fireStick
+    androidDevice.mediumTablet
   ];
 
-  static const fireStick = androidDevice.fireStick;
   static const unknown = <Device>[androidDevice.smallPhone];
 }

@@ -112,17 +112,3 @@ const mediumTablet = AndroidDevice(
   portrait: MediaQueryData(
       padding: EdgeInsets.zero, size: Size(800, 1280), devicePixelRatio: 2.0),
 );
-
-const fireStick = AndroidDevice(
-    name: 'firestick',
-    type: DeviceType.tv,
-    landscape: const MediaQueryData(
-      padding: EdgeInsets.zero,
-      size: Size(960, 540),
-      devicePixelRatio: 2.0,
-    ),
-    portrait: const MediaQueryData(
-      padding: EdgeInsets.zero,
-      size: Size(540, 960),
-      devicePixelRatio: 2.0,
-    ));
