@@ -11,7 +11,7 @@
 
 - (void)handleMethodCall:(FlutterMethodCall*)call result:(FlutterResult)result {
   if ([@"getTouch" isEqualToString:call.method]) {
-    result(true);
+    result(@(YES));
   } else {
     result(FlutterMethodNotImplemented);
   }
