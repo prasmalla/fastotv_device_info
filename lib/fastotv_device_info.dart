@@ -7,7 +7,7 @@ class FastotvDeviceInfo {
       const MethodChannel('fastotv_device_info');
 
   static Future<String> get platformVersion async {
-    final String version = await _channel.invokeMethod('getPlatformVersion');
-    return version;
+    final bool hasTouch = await _channel.invokeMethod('getTouch');
+    return hasTouch;
   }
 }
