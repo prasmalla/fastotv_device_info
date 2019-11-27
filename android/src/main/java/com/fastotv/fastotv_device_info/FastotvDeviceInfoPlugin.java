@@ -18,7 +18,7 @@ public class FastotvDeviceInfoPlugin implements MethodCallHandler {
 
   public static void registerWith(Registrar registrar) {
     final MethodChannel channel = new MethodChannel(registrar.messenger(), "fastotv_device_info");
-    channel.setMethodCallHandler(new FlutterDeviceInfoPlugin(registrar.activity(), channel));
+    channel.setMethodCallHandler(new FastotvDeviceInfoPlugin(registrar.activity(), channel));
   }
 
   public FastotvDeviceInfoPlugin(Activity activity, MethodChannel methodChannel) {
