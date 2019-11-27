@@ -45,9 +45,9 @@ const iPhoneXr = const IOSDevice(
     name: "iPhone XR",
     type: DeviceType.phone,
     portrait: MediaQueryData(
-        size: Size(375, 812), padding: EdgeInsets.zero, devicePixelRatio: 3.0),
+        size: Size(414, 896), padding: EdgeInsets.zero, devicePixelRatio: 2.0),
     landscape: MediaQueryData(
-        size: Size(812, 375), padding: EdgeInsets.zero, devicePixelRatio: 3.0));
+        size: Size(896, 414), padding: EdgeInsets.zero, devicePixelRatio: 2.0));
 
 const iPadAir2 = IOSDevice(
     name: "iPad Air 2",
