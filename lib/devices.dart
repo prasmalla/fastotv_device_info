@@ -2,8 +2,19 @@ import 'package:fastotv_device_info/device.dart';
 import 'package:fastotv_device_info/src/ios.dart' as iosDevice;
 import 'package:fastotv_device_info/src/android.dart' as androidDevice;
 
+const LGE_BRAND = 'LGE';
+const APPLE_BRAND = 'Apple';
+const AMAZON_BRAND = 'Amazon';
+const VS_BRAND = 'VS';
+const MTK_BRAND = 'MTK';
+
 abstract class Devices {
-  static final all = <Device>[]..addAll(ios)..addAll(android);
+  static const Map<String, List<Device>> all = {
+    APPLE_BRAND: ios,
+    LGE_BRAND: lge,
+    AMAZON_BRAND: amazon,
+    VS_BRAND: vs
+  };
 
   static const ios = <Device>[
     iosDevice.watch40mm,
@@ -16,17 +27,8 @@ abstract class Devices {
     iosDevice.iPadPro_129_2
   ];
 
-  static const android = <Device>[
-    androidDevice.watch,
-    androidDevice.smallPhone,
-    androidDevice.nexus5,
-    androidDevice.mediumPhone,
-    androidDevice.largePhone,
-    androidDevice.smallTablet,
-    androidDevice.asano32LH7010T,
-    androidDevice.m8sPlusW,
-    androidDevice.mediumTablet
-  ];
-
-  static const unknown = <Device>[androidDevice.smallPhone];
+  static const lge = <Device>[androidDevice.lgeNexus5];
+  static const amazon = <Device>[androidDevice.AmazonFireTVStick];
+  static const vs = <Device>[androidDevice.vsM8sPlusW];
+  static const mtk = <Device>[androidDevice.mtkAsano32LH7010T];
 }
