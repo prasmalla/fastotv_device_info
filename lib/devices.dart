@@ -13,7 +13,8 @@ abstract class Devices {
     APPLE_BRAND: ios,
     LGE_BRAND: lge,
     AMAZON_BRAND: amazon,
-    VS_BRAND: vs
+    VS_BRAND: vs,
+    MTK_BRAND: mtk
   };
 
   static const ios = <Device>[
