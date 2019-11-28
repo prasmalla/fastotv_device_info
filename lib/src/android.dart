@@ -50,3 +50,14 @@ const AmazonFireTVStick = AndroidDevice(
       size: Size(540, 960),
       devicePixelRatio: 2.0,
     ));
+
+const rockchipTX2 = AndroidDeviceWithoutTouch(
+  name: "TX2",
+  landscape: MediaQueryData(
+    padding: EdgeInsets.zero,
+    size: Size(1280, 720),
+    devicePixelRatio: 1.0,
+  ),
+  portrait: MediaQueryData(
+      padding: EdgeInsets.zero, size: Size(720, 1280), devicePixelRatio: 1.0),
+);

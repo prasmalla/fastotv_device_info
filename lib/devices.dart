@@ -7,6 +7,7 @@ const APPLE_BRAND = 'Apple';
 const AMAZON_BRAND = 'Amazon';
 const VS_BRAND = 'VS';
 const MTK_BRAND = 'MTK';
+const ROCKCHIP_BRAND = 'rockchip';
 
 abstract class Devices {
   static const Map<String, List<Device>> all = {
@@ -14,7 +15,8 @@ abstract class Devices {
     LGE_BRAND: lge,
     AMAZON_BRAND: amazon,
     VS_BRAND: vs,
-    MTK_BRAND: mtk
+    MTK_BRAND: mtk,
+    ROCKCHIP_BRAND: rockchip
   };
 
   static const ios = <Device>[
@@ -32,4 +34,5 @@ abstract class Devices {
   static const amazon = <Device>[androidDevice.AmazonFireTVStick];
   static const vs = <Device>[androidDevice.vsM8sPlusW];
   static const mtk = <Device>[androidDevice.mtkAsano32LH7010T];
+  static const rockchip = <Device>[androidDevice.rockchipTX2];
 }
