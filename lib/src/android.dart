@@ -52,7 +52,7 @@ const AmazonFireTVStick = AndroidDevice(
     ));
 
 const rockchipTX2 = AndroidDeviceWithoutTouch(
-  name: "TX2",
+  name: "Tanix TX2",
   landscape: MediaQueryData(
     padding: EdgeInsets.zero,
     size: Size(1280, 720),
