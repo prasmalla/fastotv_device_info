@@ -22,6 +22,17 @@ abstract class Device {
     return hasTouch;
   }
 
+  Future<bool> usesLeanback() async {
+    bool usesLeanback;
+    // Platform messages may fail, so we use a try/catch PlatformException.
+    try {
+      usesLeanback = await FastotvDeviceInfo.leanback;
+    } on PlatformException {
+      usesLeanback = false;
+    }
+    return usesLeanback;
+  }
+
   const Device(
       {@required this.name,
       @required this.platform,
