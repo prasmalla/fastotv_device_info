@@ -26,14 +26,24 @@ public class FastotvDeviceInfoPlugin implements MethodCallHandler {
     this.methodChannel = methodChannel;
     this.methodChannel.setMethodCallHandler(this);
   }
-
   @Override
   public void onMethodCall(MethodCall call, Result result) {
-    if (call.method.equals("getTouch")) {
-      PackageManager pm = context.getPackageManager();
+
+    PackageManager pm = context.getPackageManager();
+    switch (call.method) {
+    case "touchscreen":
       result.success(pm.hasSystemFeature(PackageManager.FEATURE_TOUCHSCREEN));
-    }else {
+      break;
+    case "faketouch":
+      result.success(pm.hasSystemFeature("android.hardware.faketouch"));
+      break;
+    case "leanback":
+      result.success(pm.hasSystemFeature("android.software.leanback"));
+      break;
+
+    default:
       result.notImplemented();
+      break;
     }
   }
 }
