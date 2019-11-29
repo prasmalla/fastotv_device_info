@@ -66,3 +66,15 @@ const rockchipTX2 = AndroidDeviceWithoutTouch(
   portrait: MediaQueryData(
       padding: EdgeInsets.zero, size: Size(720, 1280), devicePixelRatio: 1.0),
 );
+
+const sonyBravia2015 = AndroidDevice(
+  name: "Bravia 2015",
+  model: "BRAVIA 2015",
+  landscape: MediaQueryData(
+    padding: EdgeInsets.zero,
+    size: Size(960, 540),
+    devicePixelRatio: 2.0,
+  ),
+  portrait: MediaQueryData(
+      padding: EdgeInsets.zero, size: Size(540, 960), devicePixelRatio: 2.0),
+);
