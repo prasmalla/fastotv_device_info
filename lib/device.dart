@@ -5,6 +5,7 @@ import 'package:fastotv_device_info/fastotv_device_info.dart';
 
 abstract class Device {
   final String name;
+  final String model;
   final TargetPlatform platform;
   final MediaQueryData landscape;
   final MediaQueryData portrait;
@@ -22,19 +23,9 @@ abstract class Device {
     return hasTouch;
   }
 
-  Future<bool> usesLeanback() async {
-    bool usesLeanback;
-    // Platform messages may fail, so we use a try/catch PlatformException.
-    try {
-      usesLeanback = await FastotvDeviceInfo.leanback;
-    } on PlatformException {
-      usesLeanback = false;
-    }
-    return usesLeanback;
-  }
-
   const Device(
       {@required this.name,
+      @required this.model,
       @required this.platform,
       this.landscape,
       this.portrait})
@@ -42,26 +33,30 @@ abstract class Device {
 }
 
 class IOSDevice extends Device {
-  const IOSDevice({@required name, landscape, portrait})
+  const IOSDevice({@required name, @required model, landscape, portrait})
       : super(
             name: name,
+            model: model,
             platform: TargetPlatform.iOS,
             landscape: landscape,
             portrait: portrait);
 }
 
 class AndroidDevice extends Device {
-  const AndroidDevice({@required name, landscape, portrait})
+  const AndroidDevice({@required name, @required model, landscape, portrait})
       : super(
             name: name,
+            model: model,
             platform: TargetPlatform.android,
             landscape: landscape,
             portrait: portrait);
 }
 
 class AndroidDeviceWithoutTouch extends AndroidDevice {
-  const AndroidDeviceWithoutTouch({@required name, landscape, portrait})
-      : super(name: name, landscape: landscape, portrait: portrait);
+  const AndroidDeviceWithoutTouch(
+      {@required name, @required model, landscape, portrait})
+      : super(
+            name: name, model: model, landscape: landscape, portrait: portrait);
 
   Future<bool> hasTouch() async {
     return false;

@@ -5,6 +5,7 @@ import 'package:fastotv_device_info/device.dart';
 // LGE Nexus 5
 const lgeNexus5 = AndroidDevice(
   name: "Nexus 5",
+  model: "Nexus 5",
   landscape: MediaQueryData(
     padding: EdgeInsets.only(top: 24.0),
     size: Size(592, 360),
@@ -18,6 +19,7 @@ const lgeNexus5 = AndroidDevice(
 
 const mtkAsano32LH7010T = AndroidDeviceWithoutTouch(
   name: "Asano 32LH7010T",
+  model: "32LH7010T",
   landscape: MediaQueryData(
     padding: EdgeInsets.zero,
     size: Size(1280, 720),
@@ -28,7 +30,8 @@ const mtkAsano32LH7010T = AndroidDeviceWithoutTouch(
 );
 
 const vsM8sPlusW = AndroidDevice(
-  name: "M8S PLUS W",
+  name: "Mecool M8S PLUS W",
+  model: "M8S PLUS W",
   landscape: MediaQueryData(
     padding: EdgeInsets.zero,
     size: Size(1280, 720),
@@ -39,7 +42,8 @@ const vsM8sPlusW = AndroidDevice(
 );
 
 const AmazonFireTVStick = AndroidDevice(
-    name: 'FireTVStick',
+    name: "Fire TV Stick 4K",
+    model: "AFTMM",
     landscape: const MediaQueryData(
       padding: EdgeInsets.zero,
       size: Size(960, 540),
@@ -53,6 +57,7 @@ const AmazonFireTVStick = AndroidDevice(
 
 const rockchipTX2 = AndroidDeviceWithoutTouch(
   name: "Tanix TX2",
+  model: "TX2",
   landscape: MediaQueryData(
     padding: EdgeInsets.zero,
     size: Size(1280, 720),
