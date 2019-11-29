@@ -42,6 +42,20 @@ const vsM8sPlusW = AndroidDevice(
 );
 
 const AmazonFireTVStick = AndroidDevice(
+    name: "Fire TV Stick",
+    model: "AFTT",
+    landscape: const MediaQueryData(
+      padding: EdgeInsets.zero,
+      size: Size(960, 540),
+      devicePixelRatio: 2.0,
+    ),
+    portrait: const MediaQueryData(
+      padding: EdgeInsets.zero,
+      size: Size(540, 960),
+      devicePixelRatio: 2.0,
+    ));
+
+const AmazonFireTVStick4K = AndroidDevice(
     name: "Fire TV Stick 4K",
     model: "AFTMM",
     landscape: const MediaQueryData(

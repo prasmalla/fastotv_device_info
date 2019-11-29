@@ -32,7 +32,10 @@ abstract class Devices {
   ];
 
   static const lge = <Device>[androidDevice.lgeNexus5];
-  static const amazon = <Device>[androidDevice.AmazonFireTVStick];
+  static const amazon = <Device>[
+    androidDevice.AmazonFireTVStick,
+    androidDevice.AmazonFireTVStick4K
+  ];
   static const vs = <Device>[androidDevice.vsM8sPlusW];
   static const mtk = <Device>[androidDevice.mtkAsano32LH7010T];
   static const rockchip = <Device>[androidDevice.rockchipTX2];
