@@ -16,15 +16,19 @@ const iPhone5s = const IOSDevice(
 
 const iPhone8 = const IOSDevice(
     name: "iPhone 8",
-    model: "Unknown",
+    model: "iPhone10,1",
     landscape: MediaQueryData(
-        padding: EdgeInsets.zero, size: Size(667, 375), devicePixelRatio: 2.0),
+        padding: EdgeInsets.only(top: 20.0),
+        size: Size(667, 375),
+        devicePixelRatio: 2.0),
     portrait: MediaQueryData(
-        padding: EdgeInsets.zero, size: Size(375, 667), devicePixelRatio: 2.0));
+        padding: EdgeInsets.only(top: 20.0),
+        size: Size(375, 667),
+        devicePixelRatio: 2.0));
 
 const iPhoneXs = const IOSDevice(
     name: "iPhone XS",
-    model: "Unknown",
+    model: "iPhone11,2",
     portrait: MediaQueryData(
         size: Size(375, 812), padding: EdgeInsets.zero, devicePixelRatio: 3.0),
     landscape: MediaQueryData(
@@ -40,7 +44,7 @@ const iPhoneXr = const IOSDevice(
 
 const iPadAir2 = IOSDevice(
     name: "iPad Air 2",
-    model: "Unknown",
+    model: "iPad5,3",
     portrait: MediaQueryData(
         padding: EdgeInsets.zero, size: Size(768, 1024), devicePixelRatio: 2.0),
     landscape: MediaQueryData(
@@ -50,8 +54,8 @@ const iPadAir2 = IOSDevice(
     ));
 
 const iPadAir_3 = IOSDevice(
-    name: "iPad Air (3nd generation)",
-    model: "Unknown",
+    name: "iPad Air 3rd Gen",
+    model: "iPad11,3",
     portrait: MediaQueryData(
         padding: EdgeInsets.zero, size: Size(834, 1112), devicePixelRatio: 2.0),
     landscape: MediaQueryData(
@@ -60,8 +64,8 @@ const iPadAir_3 = IOSDevice(
         devicePixelRatio: 2.0));
 
 const iPadPro_129_2 = IOSDevice(
-    name: "iPad Pro (12.9-inch) (2nd generation)",
-    model: "Unknown",
+    name: "iPad Pro 2nd Gen",
+    model: "iPad7,1",
     portrait: MediaQueryData(
         padding: EdgeInsets.zero,
         size: Size(1024, 1336),
