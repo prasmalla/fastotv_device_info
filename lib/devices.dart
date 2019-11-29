@@ -20,7 +20,6 @@ abstract class Devices {
   };
 
   static const ios = <Device>[
-    iosDevice.watch40mm,
     iosDevice.iPhone5s,
     iosDevice.iPhone8,
     iosDevice.iPhoneXr,

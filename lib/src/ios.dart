@@ -2,20 +2,6 @@ import 'package:flutter/widgets.dart';
 
 import 'package:fastotv_device_info/device.dart';
 
-const watch40mm = IOSDevice(
-    name: "Watch 40mm",
-    model: "Unknown",
-    landscape: const MediaQueryData(
-      padding: EdgeInsets.zero,
-      size: Size(162, 197),
-      devicePixelRatio: 2.0,
-    ),
-    portrait: const MediaQueryData(
-      padding: EdgeInsets.zero,
-      size: Size(197, 162),
-      devicePixelRatio: 2.0,
-    ));
-
 const iPhone5s = const IOSDevice(
     name: "iPhone 5s",
     model: "iPhone6,1",

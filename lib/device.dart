@@ -28,8 +28,8 @@ abstract class Device {
       @required this.model,
       @required this.platform,
       this.landscape,
-      this.portrait})
-      : assert(landscape != null || portrait != null);
+      this.portrait});
+//: assert(landscape != null || portrait != null);
 }
 
 class IOSDevice extends Device {
