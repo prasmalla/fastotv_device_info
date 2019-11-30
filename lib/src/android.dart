@@ -92,3 +92,17 @@ const sonyBravia2015 = AndroidDevice(
   portrait: MediaQueryData(
       padding: EdgeInsets.zero, size: Size(540, 960), devicePixelRatio: 2.0),
 );
+
+const samsungNote8 = AndroidDevice(
+  name: "Note 8",
+  model: "SM-N950F",
+  landscape: MediaQueryData(
+    padding: EdgeInsets.only(top: 24.0),
+    size: Size(414.4, 797.7),
+    devicePixelRatio: 2.625,
+  ),
+  portrait: MediaQueryData(
+      padding: EdgeInsets.only(top: 24.0),
+      size: Size(797.7, 414.4),
+      devicePixelRatio: 2.625),
+);
