@@ -81,6 +81,18 @@ const rockchipTX2 = AndroidDeviceWithoutTouch(
       padding: EdgeInsets.zero, size: Size(720, 1280), devicePixelRatio: 1.0),
 );
 
+const amlogicTX3 = AndroidDeviceWithoutTouch(
+  name: "Tanix TX3",
+  model: "TX3",
+  landscape: MediaQueryData(
+    padding: EdgeInsets.zero,
+    size: Size(1280, 720),
+    devicePixelRatio: 1.0,
+  ),
+  portrait: MediaQueryData(
+      padding: EdgeInsets.zero, size: Size(720, 1280), devicePixelRatio: 1.0),
+);
+
 const sonyBravia2015 = AndroidDevice(
   name: "Bravia 2015",
   model: "BRAVIA 2015",
@@ -104,5 +116,19 @@ const samsungNote8 = AndroidDevice(
   portrait: MediaQueryData(
       padding: EdgeInsets.only(top: 24.0),
       size: Size(797.7, 414.4),
+      devicePixelRatio: 2.625),
+);
+
+const samsungGalaxy6SPlus = AndroidDevice(
+  name: "Samsung Galaxy S6 edge",
+  model: "SM-G928V",
+  landscape: MediaQueryData(
+    padding: EdgeInsets.only(top: 24.0),
+    size: Size(414.4, 731.4),
+    devicePixelRatio: 2.625,
+  ),
+  portrait: MediaQueryData(
+      padding: EdgeInsets.only(top: 24.0),
+      size: Size(731.4, 411.4),
       devicePixelRatio: 2.625),
 );

@@ -10,6 +10,7 @@ const MTK_BRAND = 'MTK';
 const ROCKCHIP_BRAND = 'rockchip';
 const SONY_BRAND = 'Sony';
 const SAMSUNG_BRAND = 'samsung';
+const AMLOGIC_BRAND = 'Amlogic';
 
 abstract class Devices {
   static const Map<String, List<Device>> all = {
@@ -20,7 +21,8 @@ abstract class Devices {
     MTK_BRAND: mtk,
     ROCKCHIP_BRAND: rockchip,
     SONY_BRAND: sony,
-    SAMSUNG_BRAND: samsung
+    SAMSUNG_BRAND: samsung,
+    AMLOGIC_BRAND: amlogic
   };
 
   static const ios = <Device>[
@@ -42,5 +44,9 @@ abstract class Devices {
   static const mtk = <Device>[androidDevice.mtkAsano32LH7010T];
   static const rockchip = <Device>[androidDevice.rockchipTX2];
   static const sony = <Device>[androidDevice.sonyBravia2015];
-  static const samsung = <Device>[androidDevice.samsungNote8];
+  static const samsung = <Device>[
+    androidDevice.samsungNote8,
+    androidDevice.samsungGalaxy6SPlus
+  ];
+  static const amlogic = <Device>[androidDevice.amlogicTX3];
 }
