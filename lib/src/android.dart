@@ -120,7 +120,7 @@ const samsungNote8 = AndroidDevice(
 );
 
 const samsungGalaxy6SPlus = AndroidDevice(
-  name: "Samsung Galaxy S6 edge",
+  name: "Samsung Galaxy S6 edge+",
   model: "SM-G928V",
   landscape: MediaQueryData(
     padding: EdgeInsets.only(top: 24.0),
