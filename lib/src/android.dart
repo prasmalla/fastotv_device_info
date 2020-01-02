@@ -93,6 +93,20 @@ const amlogicTX3 = AndroidDeviceWithoutTouch(
       padding: EdgeInsets.zero, size: Size(720, 1280), devicePixelRatio: 1.0),
 );
 
+const amlogicH96PROPlus = AndroidDeviceWithoutTouch(
+  name: "H96 PRO+",
+  model: "H96 PRO+",
+  landscape: MediaQueryData(
+    padding: EdgeInsets.only(top: 24.0),
+    size: Size(1280, 672),
+    devicePixelRatio: 1.5,
+  ),
+  portrait: MediaQueryData(
+      padding: EdgeInsets.only(top: 24.0),
+      size: Size(672, 1280),
+      devicePixelRatio: 1.5),
+);
+
 const sonyBravia2015 = AndroidDevice(
   name: "Bravia 2015",
   model: "BRAVIA 2015",
