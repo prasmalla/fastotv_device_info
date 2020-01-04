@@ -61,7 +61,7 @@ const rockchipTX2 = AndroidDeviceWithoutTouch(
         size: Size(720, 1280),
         devicePixelRatio: 1.0));
 
-const rockchipH96Max = AndroidDeviceWithoutTouch(
+const rockchipH96Max = AndroidDevice(
     name: "H96 Max",
     model: "H96 Max zrK3318",
     landscape: MediaQueryData(
