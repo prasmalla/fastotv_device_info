@@ -48,10 +48,9 @@ const iPadAir2 = IOSDevice(
     portrait: MediaQueryData(
         padding: EdgeInsets.zero, size: Size(768, 1024), devicePixelRatio: 2.0),
     landscape: MediaQueryData(
-      padding: EdgeInsets.zero,
-      size: Size(1024, 768),
-      devicePixelRatio: 2.0,
-    ));
+        padding: EdgeInsets.zero,
+        size: Size(1024, 768),
+        devicePixelRatio: 2.0));
 
 const iPadAir_3 = IOSDevice(
     name: "iPad Air 3rd Gen",
