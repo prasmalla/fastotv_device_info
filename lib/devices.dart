@@ -42,7 +42,7 @@ abstract class Devices {
   ];
   static const vs = <Device>[androidDevice.vsM8sPlusW];
   static const mtk = <Device>[androidDevice.mtkAsano32LH7010T];
-  static const rockchip = <Device>[androidDevice.rockchipTX2];
+  static const rockchip = <Device>[androidDevice.rockchipTX2, androidDevice.rockchipH96Max];
   static const sony = <Device>[androidDevice.sonyBravia2015];
   static const samsung = <Device>[
     androidDevice.samsungNote8,
