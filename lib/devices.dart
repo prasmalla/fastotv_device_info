@@ -50,6 +50,7 @@ abstract class Devices {
   ];
   static const amlogic = <Device>[
     androidDevice.amlogicH96PROPlus,
-    androidDevice.amlogicTX3
+    androidDevice.amlogicTX3,
+    androidDevice.amlogicTX6
   ];
 }
