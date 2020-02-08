@@ -83,6 +83,6 @@ const samsungGalaxy6SPlus = AndroidDevice(
 
 const invinIPC002 = AndroidDeviceWithoutTouch(
     name: "Invin IPC002",
-    model: "IPCOO2",
+    model: "IPC002",
     landscape: MediaQueryData(padding: EdgeInsets.zero, size: Size(1280, 720), devicePixelRatio: 1.0),
     portrait: MediaQueryData(padding: EdgeInsets.zero, size: Size(720, 1280), devicePixelRatio: 1.0));
