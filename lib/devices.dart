@@ -11,6 +11,7 @@ const ROCKCHIP_BRAND = 'rockchip';
 const SONY_BRAND = 'Sony';
 const SAMSUNG_BRAND = 'samsung';
 const AMLOGIC_BRAND = 'Amlogic';
+const INVIN_BRAND = 'dolphin';
 
 abstract class Devices {
   static const Map<String, List<Device>> all = {
@@ -22,7 +23,8 @@ abstract class Devices {
     ROCKCHIP_BRAND: rockchip,
     SONY_BRAND: sony,
     SAMSUNG_BRAND: samsung,
-    AMLOGIC_BRAND: amlogic
+    AMLOGIC_BRAND: amlogic,
+    INVIN_BRAND: invin
   };
 
   static const ios = <Device>[
@@ -36,21 +38,12 @@ abstract class Devices {
   ];
 
   static const lge = <Device>[androidDevice.lgeNexus5];
-  static const amazon = <Device>[
-    androidDevice.AmazonFireTVStick,
-    androidDevice.AmazonFireTVStick4K
-  ];
+  static const amazon = <Device>[androidDevice.AmazonFireTVStick, androidDevice.AmazonFireTVStick4K];
   static const vs = <Device>[androidDevice.vsM8sPlusW];
   static const mtk = <Device>[androidDevice.mtkAsano32LH7010T];
   static const rockchip = <Device>[androidDevice.rockchipTX2, androidDevice.rockchipH96Max];
   static const sony = <Device>[androidDevice.sonyBravia2015];
-  static const samsung = <Device>[
-    androidDevice.samsungNote8,
-    androidDevice.samsungGalaxy6SPlus
-  ];
-  static const amlogic = <Device>[
-    androidDevice.amlogicH96PROPlus,
-    androidDevice.amlogicTX3,
-    androidDevice.amlogicTX6
-  ];
+  static const samsung = <Device>[androidDevice.samsungNote8, androidDevice.samsungGalaxy6SPlus];
+  static const amlogic = <Device>[androidDevice.amlogicH96PROPlus, androidDevice.amlogicTX3, androidDevice.amlogicTX6];
+  static const invin = <Device>[androidDevice.invinIPC002];
 }
