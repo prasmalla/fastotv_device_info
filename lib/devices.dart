@@ -44,6 +44,11 @@ abstract class Devices {
   static const rockchip = <Device>[androidDevice.rockchipTX2, androidDevice.rockchipH96Max];
   static const sony = <Device>[androidDevice.sonyBravia2015];
   static const samsung = <Device>[androidDevice.samsungNote8, androidDevice.samsungGalaxy6SPlus];
-  static const amlogic = <Device>[androidDevice.amlogicH96PROPlus, androidDevice.amlogicTX3, androidDevice.amlogicTX6];
+  static const amlogic = <Device>[
+    androidDevice.amlogicH96PROPlus,
+    androidDevice.amlogicTX3,
+    androidDevice.amlogicTX6,
+    androidDevice.amlogicTX9Pro
+  ];
   static const invin = <Device>[androidDevice.invinIPC002];
 }
