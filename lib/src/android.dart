@@ -69,6 +69,12 @@ const amlogicTX9Pro = AndroidDeviceWithoutTouch(
     landscape: MediaQueryData(padding: EdgeInsets.zero, size: Size(1280, 720), devicePixelRatio: 1.5),
     portrait: MediaQueryData(padding: EdgeInsets.zero, size: Size(720, 1280), devicePixelRatio: 1.5));
 
+const amlogicX923GB = AndroidDeviceWithoutTouch(
+    name: "Amlogic X92 3GB",
+    model: "X92_3GB",
+    landscape: MediaQueryData(padding: EdgeInsets.zero, size: Size(1280, 720), devicePixelRatio: 1.5),
+    portrait: MediaQueryData(padding: EdgeInsets.zero, size: Size(720, 1280), devicePixelRatio: 1.5));
+
 const sonyBravia2015 = AndroidDevice(
     name: "Bravia 2015",
     model: "BRAVIA 2015",
