@@ -48,8 +48,8 @@ abstract class Devices {
     androidDevice.amlogicH96PROPlus,
     androidDevice.amlogicTX3,
     androidDevice.amlogicTX6,
-    androidDevice.amlogicTX9Pro,
-    androidDevice.amlogicX923GB
+    androidDevice.amlogicTX9Pro//,
+    //androidDevice.amlogicX923GB
   ];
   static const invin = <Device>[androidDevice.invinIPC002];
 }
