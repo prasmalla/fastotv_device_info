@@ -45,17 +45,23 @@ const rockchipH96Max = AndroidDevice(
     landscape: MediaQueryData(padding: EdgeInsets.zero, size: Size(1280, 720), devicePixelRatio: 1.5),
     portrait: MediaQueryData(padding: EdgeInsets.zero, size: Size(720, 1280), devicePixelRatio: 1.5));
 
-const amlogicTX3 = AndroidDeviceWithoutTouch(
-    name: "Tanix TX3",
-    model: "TX3",
-    landscape: MediaQueryData(padding: EdgeInsets.zero, size: Size(1280, 720), devicePixelRatio: 1.0),
-    portrait: MediaQueryData(padding: EdgeInsets.zero, size: Size(720, 1280), devicePixelRatio: 1.0));
-
 const amlogicH96PROPlus = AndroidDeviceWithoutTouch(
     name: "H96 PRO+",
     model: "H96 PRO+",
     landscape: MediaQueryData(padding: EdgeInsets.only(top: 24.0), size: Size(1280, 672), devicePixelRatio: 1.5),
     portrait: MediaQueryData(padding: EdgeInsets.only(top: 24.0), size: Size(672, 1280), devicePixelRatio: 1.5));
+
+const amlogicT95ZPlus = AndroidDeviceWithoutTouch(
+    name: "T95Z Plus",
+    model: "T95ZPLUS",
+    landscape: MediaQueryData(padding: EdgeInsets.only(top: 24.0), size: Size(1280, 672), devicePixelRatio: 1.5),
+    portrait: MediaQueryData(padding: EdgeInsets.only(top: 24.0), size: Size(672, 1280), devicePixelRatio: 1.5));
+
+const amlogicTX3 = AndroidDeviceWithoutTouch(
+    name: "Tanix TX3",
+    model: "TX3",
+    landscape: MediaQueryData(padding: EdgeInsets.zero, size: Size(1280, 720), devicePixelRatio: 1.0),
+    portrait: MediaQueryData(padding: EdgeInsets.zero, size: Size(720, 1280), devicePixelRatio: 1.0));
 
 const amlogicTX6 = AndroidDeviceWithoutTouch(
     name: "Amlogic TX6",

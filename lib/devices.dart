@@ -46,6 +46,7 @@ abstract class Devices {
   static const samsung = <Device>[androidDevice.samsungNote8, androidDevice.samsungGalaxy6SPlus];
   static const amlogic = <Device>[
     androidDevice.amlogicH96PROPlus,
+    androidDevice.amlogicT95ZPlus,
     androidDevice.amlogicTX3,
     androidDevice.amlogicTX6,
     androidDevice.amlogicTX9Pro,
