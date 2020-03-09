@@ -11,6 +11,7 @@ const ROCKCHIP_BRAND = 'rockchip';
 const SONY_BRAND = 'Sony';
 const SAMSUNG_BRAND = 'samsung';
 const AMLOGIC_BRAND = 'Amlogic';
+const ALLWINNER_BRAND = 'Allwinner';
 const INVIN_BRAND = 'dolphin';
 
 abstract class Devices {
@@ -24,6 +25,7 @@ abstract class Devices {
     SONY_BRAND: sony,
     SAMSUNG_BRAND: samsung,
     AMLOGIC_BRAND: amlogic,
+    ALLWINNER_BRAND: allwinner,
     INVIN_BRAND: invin
   };
 
@@ -53,4 +55,5 @@ abstract class Devices {
     androidDevice.amlogicX923GB
   ];
   static const invin = <Device>[androidDevice.invinIPC002];
+  static const allwinner = <Device>[androidDevice.allwinnerMBOX];
 }

@@ -104,3 +104,9 @@ const invinIPC002 = AndroidDeviceWithoutTouch(
     model: "IPC002",
     landscape: MediaQueryData(padding: EdgeInsets.zero, size: Size(1280, 720), devicePixelRatio: 1.0),
     portrait: MediaQueryData(padding: EdgeInsets.zero, size: Size(720, 1280), devicePixelRatio: 1.0));
+
+const allwinnerMBOX = AndroidDeviceWithoutTouch(
+    name: "MBOX",
+    model: "MBOX",
+    landscape: MediaQueryData(padding: EdgeInsets.zero, size: Size(1280, 720), devicePixelRatio: 1.0),
+    portrait: MediaQueryData(padding: EdgeInsets.zero, size: Size(720, 1280), devicePixelRatio: 1.0));
