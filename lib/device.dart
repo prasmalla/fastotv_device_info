@@ -23,39 +23,22 @@ abstract class Device {
     return hasTouch;
   }
 
-  const Device(
-      {@required this.name,
-      @required this.model,
-      @required this.platform,
-      this.landscape,
-      this.portrait});
+  const Device({@required this.name, @required this.model, @required this.platform, this.landscape, this.portrait});
 }
 
 class IOSDevice extends Device {
   const IOSDevice({@required name, @required model, landscape, portrait})
-      : super(
-            name: name,
-            model: model,
-            platform: TargetPlatform.iOS,
-            landscape: landscape,
-            portrait: portrait);
+      : super(name: name, model: model, platform: TargetPlatform.iOS, landscape: landscape, portrait: portrait);
 }
 
 class AndroidDevice extends Device {
   const AndroidDevice({@required name, @required model, landscape, portrait})
-      : super(
-            name: name,
-            model: model,
-            platform: TargetPlatform.android,
-            landscape: landscape,
-            portrait: portrait);
+      : super(name: name, model: model, platform: TargetPlatform.android, landscape: landscape, portrait: portrait);
 }
 
 class AndroidDeviceWithoutTouch extends AndroidDevice {
-  const AndroidDeviceWithoutTouch(
-      {@required name, @required model, landscape, portrait})
-      : super(
-            name: name, model: model, landscape: landscape, portrait: portrait);
+  const AndroidDeviceWithoutTouch({@required name, @required model, landscape, portrait})
+      : super(name: name, model: model, landscape: landscape, portrait: portrait);
 
   Future<bool> hasTouch() async {
     return false;
