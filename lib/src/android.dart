@@ -34,10 +34,10 @@ const AmazonFireTVStick4K = AndroidDevice(
     portrait: const MediaQueryData(padding: EdgeInsets.zero, size: Size(540, 960), devicePixelRatio: 2.0));
 
 const rockchipBil = AndroidDeviceWithoutTouch(
-    name: "Rabi",
+    name: "Bil 3A Rabi",
     model: "BIL3ARABITV-RK3318",
-    landscape: MediaQueryData(padding: EdgeInsets.zero, size: Size(1280, 720), devicePixelRatio: 1.5),
-    portrait: MediaQueryData(padding: EdgeInsets.zero, size: Size(720, 1280), devicePixelRatio: 1.5));
+    landscape: MediaQueryData(padding: EdgeInsets.only(top: 24.0), size: Size(1280, 720), devicePixelRatio: 1.5),
+    portrait: MediaQueryData(padding: EdgeInsets.only(top: 24.0), size: Size(720, 1280), devicePixelRatio: 1.5));
 
 const rockchipTX2 = AndroidDeviceWithoutTouch(
     name: "Tanix TX2",
