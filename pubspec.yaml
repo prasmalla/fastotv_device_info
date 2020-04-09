@@ -1,8 +1,8 @@
 name: fastotv_device_info
 description: A new flutter plugin project.
 version: 0.0.1
-author:
-homepage:
+author: Alexandr Topilski <support@fastogt.com>
+homepage: https://fastogt.com
 
 environment:
   sdk: ">=2.1.0 <3.0.0"
