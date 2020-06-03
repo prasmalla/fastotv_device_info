@@ -1,6 +1,5 @@
-import 'package:flutter/widgets.dart';
-
 import 'package:fastotv_device_info/device.dart';
+import 'package:flutter/widgets.dart';
 
 // LGE Nexus 5
 const lgeNexus5 = AndroidDevice(
@@ -54,6 +53,12 @@ const rockchipH96Max = AndroidDevice(
 const rockchipX10PRO = AndroidDeviceWithoutTouch(
     name: "X10 PRO",
     model: "X10PRO",
+    landscape: MediaQueryData(padding: EdgeInsets.zero, size: Size(1280, 720), devicePixelRatio: 1.5),
+    portrait: MediaQueryData(padding: EdgeInsets.zero, size: Size(720, 1280), devicePixelRatio: 1.5));
+
+const rockchipA95XR3 = AndroidDeviceWithoutTouch(
+    name: "A95 XR3",
+    model: "A95XR3",
     landscape: MediaQueryData(padding: EdgeInsets.zero, size: Size(1280, 720), devicePixelRatio: 1.5),
     portrait: MediaQueryData(padding: EdgeInsets.zero, size: Size(720, 1280), devicePixelRatio: 1.5));
 

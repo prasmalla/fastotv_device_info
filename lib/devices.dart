@@ -1,6 +1,6 @@
 import 'package:fastotv_device_info/device.dart';
-import 'package:fastotv_device_info/src/ios.dart' as iosDevice;
 import 'package:fastotv_device_info/src/android.dart' as androidDevice;
+import 'package:fastotv_device_info/src/ios.dart' as iosDevice;
 
 const LGE_BRAND = 'LGE';
 const APPLE_BRAND = 'Apple';
@@ -49,7 +49,8 @@ abstract class Devices {
     androidDevice.rockchipTX2,
     androidDevice.rockchipBil,
     androidDevice.rockchipH96Max,
-    androidDevice.rockchipX10PRO
+    androidDevice.rockchipX10PRO,
+    androidDevice.rockchipA95XR3
   ];
   static const sony = <Device>[androidDevice.sonyBravia2015];
   static const samsung = <Device>[androidDevice.samsungNote8, androidDevice.samsungGalaxy6SPlus];
