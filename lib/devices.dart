@@ -46,6 +46,7 @@ abstract class Devices {
   static const vs = <Device>[androidDevice.vsM8sPlusW];
   static const mtk = <Device>[androidDevice.mtkAsano32LH7010T];
   static const rockchip = <Device>[
+    androidDevice.rockchipH96Max2,
     androidDevice.rockchipTX2,
     androidDevice.rockchipBil,
     androidDevice.rockchipH96Max,
