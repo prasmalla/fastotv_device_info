@@ -58,6 +58,7 @@ abstract class Devices {
   static const amlogic = <Device>[
     androidDevice.amlogicH96PROPlus,
     androidDevice.amlogicT95ZPlus,
+    androidDevice.amlogicP281,
     androidDevice.amlogicTX3,
     androidDevice.amlogicTX6,
     androidDevice.amlogicTX9Pro,

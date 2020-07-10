@@ -80,6 +80,12 @@ const amlogicT95ZPlus = AndroidDeviceWithoutTouch(
     landscape: MediaQueryData(padding: EdgeInsets.only(top: 24.0), size: Size(1280, 672), devicePixelRatio: 1.5),
     portrait: MediaQueryData(padding: EdgeInsets.only(top: 24.0), size: Size(672, 1280), devicePixelRatio: 1.5));
 
+const amlogicP281 = AndroidDeviceWithoutTouch(
+    name: "P281",
+    model: "p281",
+    landscape: MediaQueryData(padding: EdgeInsets.zero, size: Size(1280, 720), devicePixelRatio: 1.0),
+    portrait: MediaQueryData(padding: EdgeInsets.zero, size: Size(720, 1280), devicePixelRatio: 1.0));
+
 const amlogicTX3 = AndroidDeviceWithoutTouch(
     name: "Tanix TX3",
     model: "TX3",
