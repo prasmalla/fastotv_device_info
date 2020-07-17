@@ -67,5 +67,5 @@ abstract class Devices {
   ];
   static const invin = <Device>[androidDevice.invinIPC002];
   static const allwinner = <Device>[androidDevice.allwinnerMBOX];
-  static const formuler = <Device>[androidDevice.formulerZ7Plus];
+  static const formuler = <Device>[androidDevice.formulerZ7Plus, androidDevice.formulerZ7Plus5G];
 }

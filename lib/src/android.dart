@@ -151,3 +151,9 @@ const formulerZ7Plus = AndroidDeviceWithoutTouch(
     model: "Z7_PLUS",
     landscape: MediaQueryData(padding: EdgeInsets.zero, size: Size(1280, 720), devicePixelRatio: 1.5),
     portrait: MediaQueryData(padding: EdgeInsets.zero, size: Size(720, 1280), devicePixelRatio: 1.5));
+
+const formulerZ7Plus5G = AndroidDeviceWithoutTouch(
+    name: "Z7 Plus 5G",
+    model: "Z7_PLUS_5G",
+    landscape: MediaQueryData(padding: EdgeInsets.zero, size: Size(1280, 720), devicePixelRatio: 1.5),
+    portrait: MediaQueryData(padding: EdgeInsets.zero, size: Size(720, 1280), devicePixelRatio: 1.5));
