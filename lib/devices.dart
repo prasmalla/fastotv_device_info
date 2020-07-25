@@ -63,7 +63,8 @@ abstract class Devices {
     androidDevice.amlogicTX6,
     androidDevice.amlogicTX9Pro,
     androidDevice.amlogicX923GB,
-    androidDevice.amlogicMXQPROPlus
+    androidDevice.amlogicMXQPROPlus,
+    androidDevice.amlogicPendooX11PRO
   ];
   static const invin = <Device>[androidDevice.invinIPC002];
   static const allwinner = <Device>[androidDevice.allwinnerMBOX];
