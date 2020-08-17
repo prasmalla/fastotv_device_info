@@ -60,6 +60,7 @@ abstract class Devices {
     androidDevice.amlogicT95ZPlus,
     androidDevice.amlogicP281,
     androidDevice.amlogicTX3,
+    androidDevice.amlogicTX5Max,
     androidDevice.amlogicTX6,
     androidDevice.amlogicTX9Pro,
     androidDevice.amlogicX923GB,

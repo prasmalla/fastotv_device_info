@@ -92,6 +92,12 @@ const amlogicTX3 = AndroidDeviceWithoutTouch(
     landscape: MediaQueryData(padding: EdgeInsets.zero, size: Size(1280, 720), devicePixelRatio: 1.0),
     portrait: MediaQueryData(padding: EdgeInsets.zero, size: Size(720, 1280), devicePixelRatio: 1.0));
 
+const amlogicTX5Max = AndroidDeviceWithoutTouch(
+    name: "Amlogic TX5 Max",
+    model: "TX5 MAX",
+    landscape: MediaQueryData(padding: EdgeInsets.zero, size: Size(1280, 720), devicePixelRatio: 1.5),
+    portrait: MediaQueryData(padding: EdgeInsets.zero, size: Size(720, 1280), devicePixelRatio: 1.5));
+
 const amlogicTX6 = AndroidDeviceWithoutTouch(
     name: "Amlogic TX6",
     model: "TX6",
