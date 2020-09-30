@@ -10,10 +10,11 @@ const MTK_BRAND = 'MTK';
 const ROCKCHIP_BRAND = 'rockchip';
 const SONY_BRAND = 'Sony';
 const SAMSUNG_BRAND = 'samsung';
+const GOOGLE_BRAND = 'Google';
 const AMLOGIC_BRAND = 'Amlogic';
 const ALLWINNER_BRAND = 'Allwinner';
 const INVIN_BRAND = 'dolphin';
-const FORMULER = 'FORMULER';
+const FORMULER_BRAND = 'FORMULER';
 
 abstract class Devices {
   static const Map<String, List<Device>> all = {
@@ -28,7 +29,8 @@ abstract class Devices {
     AMLOGIC_BRAND: amlogic,
     ALLWINNER_BRAND: allwinner,
     INVIN_BRAND: invin,
-    FORMULER: formuler
+    FORMULER_BRAND: formuler,
+    GOOGLE_BRAND: google
   };
 
   static const ios = <Device>[
@@ -70,4 +72,5 @@ abstract class Devices {
   static const invin = <Device>[androidDevice.invinIPC002];
   static const allwinner = <Device>[androidDevice.allwinnerMBOX];
   static const formuler = <Device>[androidDevice.formulerZ7Plus, androidDevice.formulerZ7Plus5G];
+  static const google = <Device>[androidDevice.googleMBOX];
 }
